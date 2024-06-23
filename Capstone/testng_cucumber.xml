@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="browser" value = "chrome"></parameter>
+	<classes>
+		<class name="com.ust.runner.TestRunner_Search"/>
+		<class name="com.ust.runner.TestRunner_Sort"/>
+		<class name="com.ust.runner.TestRunner_Cart"/>
+		<class name="com.ust.runner.TestRunner_Review"/>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
