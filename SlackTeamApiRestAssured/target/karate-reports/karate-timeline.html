@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"karate_testcase\/karate[1:6]","start":1715172850821,"end":1715172851288,"title":"karate_testcase\/karate[1:6] 18:24:10.821-18:24:11.288 Get trainee information"},{"id":2,"group":1,"content":"karate_testcase\/karate[2.1:22]","start":1715172851305,"end":1715172851387,"title":"karate_testcase\/karate[2.1:22] 18:24:11.305-18:24:11.387 Get trainee with ID"},{"id":3,"group":1,"content":"karate_testcase\/karate[2.2:23]","start":1715172851397,"end":1715172851414,"title":"karate_testcase\/karate[2.2:23] 18:24:11.397-18:24:11.414 Get trainee with ID"},{"id":4,"group":1,"content":"karate_testcase\/karate[2.3:24]","start":1715172851425,"end":1715172851441,"title":"karate_testcase\/karate[2.3:24] 18:24:11.425-18:24:11.441 Get trainee with ID"},{"id":5,"group":1,"content":"karate_testcase\/karate[3:27]","start":1715172851450,"end":1715172851540,"title":"karate_testcase\/karate[3:27] 18:24:11.450-18:24:11.540 Post trainee with id"},{"id":6,"group":1,"content":"karate_testcase\/karate[4.1:62]","start":1715172851551,"end":1715172851579,"title":"karate_testcase\/karate[4.1:62] 18:24:11.551-18:24:11.579 Put trainee with id"},{"id":7,"group":1,"content":"karate_testcase\/karate[5:65]","start":1715172851587,"end":1715172851607,"title":"karate_testcase\/karate[5:65] 18:24:11.587-18:24:11.607 Delete a trainee"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

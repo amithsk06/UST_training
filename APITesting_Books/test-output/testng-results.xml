@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-04T09:43:35 IST" name="Default suite" finished-at="2024-06-04T09:43:45 IST" duration-ms="9505">
+    <groups>
+    </groups>
+    <test started-at="2024-06-04T09:43:35 IST" name="Default test" finished-at="2024-06-04T09:43:45 IST" duration-ms="9505">
+      <class name="apiTestCases.BookTest">
+        <test-method signature="testSchemaValidation()[pri:6, instance:apiTestCases.BookTest@7d8704ef]" started-at="2024-06-04T09:43:36 IST" name="testSchemaValidation" finished-at="2024-06-04T09:43:45 IST" duration-ms="8955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSchemaValidation -->
+      </class> <!-- apiTestCases.BookTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

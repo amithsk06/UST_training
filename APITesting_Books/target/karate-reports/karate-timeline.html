@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"karateTestCase\/fakerestapi_books[1:7]","start":1717590112404,"end":1717590117525,"title":"karateTestCase\/fakerestapi_books[1:7] 17:51:52.404-17:51:57.525 Get book information"},{"id":2,"group":1,"content":"karateTestCase\/fakerestapi_books[2:14]","start":1717590117542,"end":1717590118621,"title":"karateTestCase\/fakerestapi_books[2:14] 17:51:57.542-17:51:58.621 Get book information by ID"},{"id":3,"group":1,"content":"karateTestCase\/fakerestapi_books[3:23]","start":1717590118635,"end":1717590119514,"title":"karateTestCase\/fakerestapi_books[3:23] 17:51:58.635-17:51:59.514 Post book information"},{"id":4,"group":1,"content":"karateTestCase\/fakerestapi_books[4.1:53]","start":1717590119550,"end":1717590120645,"title":"karateTestCase\/fakerestapi_books[4.1:53] 17:51:59.550-17:52:00.645 Post Multiple books"},{"id":5,"group":1,"content":"karateTestCase\/fakerestapi_books[4.2:54]","start":1717590120676,"end":1717590121466,"title":"karateTestCase\/fakerestapi_books[4.2:54] 17:52:00.676-17:52:01.466 Post Multiple books"},{"id":6,"group":1,"content":"karateTestCase\/fakerestapi_books[5:56]","start":1717590121492,"end":1717590122309,"title":"karateTestCase\/fakerestapi_books[5:56] 17:52:01.492-17:52:02.309 Deletes an book"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

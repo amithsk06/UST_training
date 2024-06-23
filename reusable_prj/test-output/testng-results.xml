@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-12T11:33:19 IST" name="Default suite" finished-at="2024-04-12T11:33:35 IST" duration-ms="15927">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@2aceadd4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-04-12T11:33:19 IST" name="Default test" finished-at="2024-04-12T11:33:35 IST" duration-ms="15927">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@2aceadd4]" started-at="2024-04-12T11:33:19 IST" name="setUpClass" finished-at="2024-04-12T11:33:19 IST" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@e9ef5b6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@2aceadd4]" started-at="2024-04-12T11:33:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-12T11:33:35 IST" duration-ms="15705" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Purchase Dog Behaviour Consultation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase Dog Behaviour Consultation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test case failed: element click intercepted: Element <a href="https://supertails.com/collections/dog-training-behaviour">...</a> is not clickable at point (631, 270). Other element would receive the click: <div class="training-contant">...</div>
+  (Session info: chrome=123.0.6312.107)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4fad7c77aed279662059d41f2b05b60, clickElement {id=f.1484F7083E5E5015DDA09C8307C3E47C.d.5CC555FF00465F6D5DA27C719050D78B.e.189}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\268852\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49162/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a4fad7c77aed279662059d41f2b05b60)] -> xpath: (//div[@class='need-train-help'])[1]/a]
+Session ID: a4fad7c77aed279662059d41f2b05b60]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test case failed: element click intercepted: Element <a href="https://supertails.com/collections/dog-training-behaviour">...</a> is not clickable at point (631, 270). Other element would receive the click: <div class="training-contant">...</div>
+  (Session info: chrome=123.0.6312.107)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4fad7c77aed279662059d41f2b05b60, clickElement {id=f.1484F7083E5E5015DDA09C8307C3E47C.d.5CC555FF00465F6D5DA27C719050D78B.e.189}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.107, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\268852\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49162/devtoo..., se:cdpVersion: 123.0.6312.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a4fad7c77aed279662059d41f2b05b60)] -> xpath: (//div[@class='need-train-help'])[1]/a]
+Session ID: a4fad7c77aed279662059d41f2b05b60
+at org.testng.Assert.fail(Assert.java:111)
+at base.ReusableFunction.reportFail(ReusableFunction.java:235)
+at base.ReusableFunction.clickOn(ReusableFunction.java:164)
+at pom.ShopByBreedPOM.clickConsultNow(ShopByBreedPOM.java:27)
+at stepDefinition.ShopByBreedTest.user_navigate_to_consult_now_page(ShopByBreedTest.java:55)
+at ✽.User navigate to Consult Now page(file:///C:/Users/268852/eclipse-workspace/MP/reusable_prj/src/test/resources/features/ShopByBreed.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@2aceadd4]" started-at="2024-04-12T11:33:35 IST" name="tearDownClass" finished-at="2024-04-12T11:33:35 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

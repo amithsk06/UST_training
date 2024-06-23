@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"26bc496c-d5e5-4e94-ac77-a3ef6a5b9252",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>karate_testcase.karate</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-05-08 06:24:11 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get trainee information</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:22]"><span>[2.1:22]</span> <span>Get trainee with ID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.2:23]"><span>[2.2:23]</span> <span>Get trainee with ID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.3:24]"><span>[2.3:24]</span> <span>Get trainee with ID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:27]"><span>[3:27]</span> <span>Post trainee with id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.1:62]"><span>[4.1:62]</span> <span>Put trainee with id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:65]"><span>[5:65]</span> <span>Delete a trainee</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">karate_testcase/karate.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">SlackTeamApi</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get trainee information</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>450</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">79</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">371</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">18:24:11.189 request:
+1 &gt; GET http://localhost:8080/trainee/all
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:24:11.246 response time in milliseconds: 52
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;id&quot;:6,&quot;name&quot;:&quot;anand&quot;,&quot;lastName&quot;:&quot;br&quot;,&quot;email&quot;:&quot;brrrr@gmail.com&quot;,&quot;city&quot;:&quot;tvm&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:104,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:105,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:106,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:153,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;varkala&quot;},{&quot;id&quot;:155,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:156,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:157,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:202,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:203,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:252,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:253,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:254,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:255,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:256,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:257,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:258,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:259,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:260,&quot;name&quot;:&quot;abcd&quot;,&quot;lastName&quot;:&quot;xyz&quot;,&quot;email&quot;:&quot;abc@gmail.com&quot;,&quot;city&quot;:&quot;ardtjfkg&quot;},{&quot;id&quot;:261,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:262,&quot;name&quot;:&quot;nabill&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;},{&quot;id&quot;:263,&quot;name&quot;:&quot;texx&quot;,&quot;lastName&quot;:&quot;pyper&quot;,&quot;email&quot;:&quot;tp@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;},{&quot;id&quot;:264,&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;pyper&quot;,&quot;email&quot;:&quot;tp@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;},{&quot;id&quot;:265,&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;Pyperr&quot;,&quot;email&quot;:&quot;tp@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;},{&quot;id&quot;:266,&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;Pyperr&quot;,&quot;email&quot;:&quot;tex@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;},{&quot;id&quot;:267,&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;Pyperr&quot;,&quot;email&quot;:&quot;tex@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:22]</span>
+                <span class="scenario-name">Get trainee with ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>83</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/6&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">18:24:11.307 request:
+1 &gt; GET http://localhost:8080/trainee/6
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:24:11.316 response time in milliseconds: 9
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:6,&quot;name&quot;:&quot;anand&quot;,&quot;lastName&quot;:&quot;br&quot;,&quot;email&quot;:&quot;brrrr@gmail.com&quot;,&quot;city&quot;:&quot;tvm&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 6</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;anand&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.2:23]</span>
+                <span class="scenario-name">Get trainee with ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>18</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/102&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">18:24:11.399 request:
+1 &gt; GET http://localhost:8080/trainee/102
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:24:11.410 response time in milliseconds: 10
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:102,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 102</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;nabil&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:24]</span>
+                <span class="scenario-name">Get trainee with ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/104&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.15">18:24:11.428 request:
+1 &gt; GET http://localhost:8080/trainee/104
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:24:11.438 response time in milliseconds: 9
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:104,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 104</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;nabil&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:27]</span>
+                <span class="scenario-name">Post trainee with id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>91</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/trainees&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.29">{
+  &quot;name&quot;: &quot;Tex&quot;,
+  &quot;lastName&quot;: &quot;Pyper&quot;,
+  &quot;email&quot;: &quot;texpyper@gmail.com&quot;,
+  &quot;city&quot;: &quot;texas&quot;
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">84</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">18:24:11.521 request:
+1 &gt; POST http://localhost:8080/trainee/trainees
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 77
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;Pyper&quot;,&quot;email&quot;:&quot;texpyper@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;}
+
+18:24:11.536 response time in milliseconds: 15
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:268,&quot;name&quot;:&quot;Tex&quot;,&quot;lastName&quot;:&quot;Pyper&quot;,&quot;email&quot;:&quot;texpyper@gmail.com&quot;,&quot;city&quot;:&quot;texas&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;Tex&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.city == &#39;texas&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.1:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.1:62]</span>
+                <span class="scenario-name">Put trainee with id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>28</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.1:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/trainees/153&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.45">{
+      &quot;name&quot;: &quot;nabil&quot;,
+      &quot;lastName&quot;: &quot;sulthan&quot;,
+      &quot;email&quot;: &quot;nb@gmail.com&quot;,
+      &quot;city&quot;: &quot;edava&quot;
+  }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.54">18:24:11.554 request:
+1 &gt; PUT http://localhost:8080/trainee/trainees/153
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 75
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;}
+
+18:24:11.574 response time in milliseconds: 20
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;id&quot;:153,&quot;name&quot;:&quot;nabil&quot;,&quot;lastName&quot;:&quot;sulthan&quot;,&quot;email&quot;:&quot;nb@gmail.com&quot;,&quot;city&quot;:&quot;edava&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &#39;nabil&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.city == &#39;edava&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:65]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:65]</span>
+                <span class="scenario-name">Delete a trainee</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:65]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:65]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://localhost:8080/trainee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/trainees/155&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">18:24:11.590 request:
+1 &gt; DELETE http://localhost:8080/trainee/trainees/155
+1 &gt; Host: localhost:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:24:11.606 response time in milliseconds: 16
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Date: Wed, 08 May 2024 12:54:11 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

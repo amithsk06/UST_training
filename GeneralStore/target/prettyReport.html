@@ -1,0 +1,6 @@
+
+@Contacts @create
+Scenario: Create a new user           # src/test/resources/features/contacts.feature:6
+  Given User already on contacts page # stepDefenition.Contacts.user_already_on_contacts_page()
+  When User adds a new contact        # stepDefenition.Contacts.user_adds_a_new_contact()
+  Then I validate the outcomes        # stepDefenition.Contacts.i_validate_the_outcomes()

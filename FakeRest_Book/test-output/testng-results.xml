@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-02T15:58:11 IST" name="Default suite" finished-at="2024-05-02T15:58:17 IST" duration-ms="6070">
+    <groups>
+    </groups>
+    <test started-at="2024-05-02T15:58:11 IST" name="Default test" finished-at="2024-05-02T15:58:17 IST" duration-ms="6070">
+      <class name="APITestcase.DatadrivenTest">
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:APITestcase.DatadrivenTest@707194ba]" started-at="2024-05-02T15:58:12 IST" name="testPostuser" data-provider="data" finished-at="2024-05-02T15:58:15 IST" duration-ms="3105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[book1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lorem]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[strings]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2024-04-30T13:52:16.007113+00:00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostuser -->
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:APITestcase.DatadrivenTest@707194ba]" started-at="2024-05-02T15:58:15 IST" name="testPostuser" data-provider="data" finished-at="2024-05-02T15:58:16 IST" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[book2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lorem]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[strings]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2024-04-24T13:52:16.007188+00:00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostuser -->
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:APITestcase.DatadrivenTest@707194ba]" started-at="2024-05-02T15:58:16 IST" name="testPostuser" data-provider="data" finished-at="2024-05-02T15:58:17 IST" duration-ms="633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[102]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[book3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lorem]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[300]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[strings]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2024-04-23T13:52:16.007201+00:00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostuser -->
+        <test-method signature="testPostuser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:APITestcase.DatadrivenTest@707194ba]" started-at="2024-05-02T15:58:17 IST" name="testPostuser" data-provider="data" finished-at="2024-05-02T15:58:17 IST" duration-ms="630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[103]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[book4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lorem]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[strings]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2024-04-22T13:52:16.0072123+00:00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostuser -->
+      </class> <!-- APITestcase.DatadrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

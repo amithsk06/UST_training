@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-23T12:45:17 IST" name="Default suite" finished-at="2024-05-23T12:45:58 IST" duration-ms="41289">
+    <groups>
+    </groups>
+    <test started-at="2024-05-23T12:45:17 IST" name="Default test" finished-at="2024-05-23T12:45:58 IST" duration-ms="41289">
+      <class name="workflow.ContactTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:workflow.ContactTest@618b19ad]" started-at="2024-05-23T12:45:17 IST" name="setup" finished-at="2024-05-23T12:45:30 IST" duration-ms="13155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="startTest()[pri:0, instance:workflow.ContactTest@618b19ad]" started-at="2024-05-23T12:45:30 IST" name="startTest" finished-at="2024-05-23T12:45:43 IST" duration-ms="12483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="newcontactTest()[pri:1, instance:workflow.ContactTest@618b19ad]" started-at="2024-05-23T12:45:43 IST" name="newcontactTest" finished-at="2024-05-23T12:45:52 IST" duration-ms="9156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newcontactTest -->
+        <test-method signature="contactcheckTest()[pri:2, instance:workflow.ContactTest@618b19ad]" started-at="2024-05-23T12:45:52 IST" name="contactcheckTest" finished-at="2024-05-23T12:45:54 IST" duration-ms="2263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactcheckTest -->
+        <test-method signature="editcontactTest()[pri:3, instance:workflow.ContactTest@618b19ad]" started-at="2024-05-23T12:45:54 IST" name="editcontactTest" finished-at="2024-05-23T12:45:58 IST" duration-ms="4144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editcontactTest -->
+      </class> <!-- workflow.ContactTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
